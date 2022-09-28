@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>What Is HTML? Hypertext Markup Language Basics Explained</h1>
+	</header>
+	<article>
+		<img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.webp" alt="html">
+		<p>HTML stands for <strong>HyperText Markup Language</strong>.It is a standard markup lanaguage for web page
+			creation.
+			It allows the creation and structure of sections,paragraphs, and links using HTML elements(the building blocks
+			of
+			a web page)
+			such as tags and attributes.
+		</p>
+		<p>
+			HTML has a lot of use cases, namely:
+		<ul>
+			<li><strong>Web development: </strong>Developers use HTML code to design how a browser displays web page
+				elements, such as text, hyperlinks, and media files. </li>
+			<li><strong>Internet navigation: </strong>Users can easily navigate and insert links between related pages and
+				websites as HTML is heavily used to embed hyperlinks.</li>
+			<li><strong>Web documentaion: </strong>HTML makes it possible to organize and format documents, similarly to
+				Microsoft Word.</li>
+		</ul>
+		</p>
+		<p>It's also worth noting that HTML is not considered a programming language as it can't create dynamic
+			functionality. It is now considered an official web standard.<a href="https://www.w3.org" target="_blank">The
+				World Wide Web Consortium (W3C)</a> maintains and
+			develops HTML specifications, along with providing regular updates.
+
+			This article will go over the basics of HTML, including how it works, its pros and cons, and how it relates to
+			<abbr title="Cascading Style Sheet">CSS</abbr> and JavaScript.
+		</p>
+		<h2>How Does HTML Work</h2>
+		<img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/10/html-historical-milestones.png"
+			alt="html-history">
+		<p>
+			The average website includes several different HTML pages. For instance, a home page, an about page, and a
+			contact page would all have separate HTML files.
+		</p>
+		<p>
+			All HTML pages have a series of HTML elements, consisting of a set of tags and attributes. HTML elements are
+			the building blocks of a web page. A tag tells the web browser where an element begins and ends, whereas an
+			attribute describes the characteristics of an element.
+		</p>
+		The three main parts of an element are:
+		<ul>
+			<li><strong>Opening tag</strong> – used to state where an element starts to take effect. The tag is wrapped
+				with opening and
+				closing angle brackets. For example, use the start tag <code>&lt;p&gt;</code> to create a paragraph.
+			</li>
+			<li><strong>Content</strong> – this is the output that other users see. </li>
+			<li><strong>Closing tag</strong> – the same as the opening tag, but with a forward slash before the element
+				name. For
+				example, <code>&lt;/p&gt;</code> to end a paragraph. </li>
+		</ul>
+		</p>
+		<code class="line">&lt;p&gt;This is how you add a paragraph in HTML.&lt;/p&gt;</code>
+		<p>
+			Another critical part of an HTML element is its attribute, which has two sections – a name and attribute value.
+			The name identifies the additional information that a user wants to add, while the attribute value gives
+			further specifications.
+		</p>>
+		For example, a style element adding the color purple and the font-family verdana will look like this:
+		</p>
+		<code class="line">&lt;p style="<span class="blue">color:purple;font-family:verdana</span>"&gt;<span class="blue">This</span> is how you add a paragraph in HTML.&lt/p&gt;
+		</code>
+		<p>Another attribute, the HTML class, is most important for development and programming. The class attribute adds
+			style information that can work on different elements with the same class value.
+		</p>
+		<p>For example, we will use the same style for a heading <code>&lt;h1&gt;</code> and a paragraph <code&lt;p&gt;>
+				</code>. The style includes
+				background color, text color, border, margin, and padding, under the class .important. To achieve the same
+				style
+				between <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>, add class=”important” after each start tag:
+		</p>
+		<code>
+<pre class="line">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.important {
+background-color: blue;
+color: white;
+border: 2px solid black;
+margin: 2px;
+padding: 2px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 <span class="blue">class</span>="<span class="blue">important</span>"&gt;<span class="blue">This</span> is a heading&lt;/h1&gt;
+&lt;p&gt; <span class="blue">class</span>="<span class="blue">important</span>"><span class="blue">This</span> is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+	</code>
+		<p>Most elements have an opening and a closing tag, but some elements do not need closing tags to work, such as
+			empty elements. These elements do not use an end tag because they do not have content:
+		</p>
+		<code class="line">&lt;img src="/" alt="Image"&gt;</code>
+		<p>
+			This image tag has two attributes – an src attribute, the image path, and an alt attribute, the descriptive
+			text. However, it does not have content nor an end tag.
+		</p>
+		<p>
+			Lastly, every HTML document must start with a <code>&lt;!DOCTYPE&gt;</code> declaration to inform the web
+			browser about the document type. With HTML5, the doctype HTML public declaration will be:
+		</p>
+		<code class="line">&lt!DOCTYPE html&gt;</code>
+		<h2>Most Used HTML Tags and HTML Elements</h2>
+		<p>Currently, there are 142 HTML tags available that allow for the <a
+				href="https://www.hostinger.com/tutorials/html-cheat-sheet " target="_blank">creation of various
+				elements</a>.
+			Even though
+			modern browsers no longer support some of these tags, learning all the different elements available is still
+			beneficial.</p>
+		<p>This section will discuss the most-used HTML tags and two main elements – block-level elements and inline
+			elements. </p>
+		<h2>Block-Level Elements</h2>
+		<p>A block-level element takes up the entire width of a page. It always starts a new line in the document. For
+			example, a heading element will be in a separate line from a paragraph element.</p>
+		<p>Every HTML page uses these three tags:
+		<ul>
+			<li><code>&lt;html&gt;</code> tag is the root eleent than defines the whole HTML document</li>
+			<li><code>&lt;head&gt;</code> tag holds meta information such as the page's title and charset.</li>
+			<li><code>&lt;body&gt;</code> tag encloses all the content that appears on the page. </li>
+		</ul>
+		</p>
+		<code>
+			<pre class="line">
+&lt;html&gt;
+&lt;head&gt;
+&lt!-- META INFORMATION --;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- PAGE CONTENT --&gt;
+&lt;/body&gt;
+&lt;html&gt;
+</pre>
+		</code>
+		<p>
+			Other popular block-level tags include:
+		<ul>
+			<li><strong>Heading tags</strong> – these range from &lt;h1&gt; to &lt;h6&gt;, where heading h1 is largest in
+				size, getting
+				smaller as they
+				move up to h6. </li>
+			<li><strong>Paragraph tags</strong> – are all enclosed by using the &lt;p&gt; tag.</li>
+			<li><strong>List tags</strong> – have different variations. Use the &lt;ol&gt; tag for an ordered list, and use
+				&lt;ul&gt; for
+				an unordered
+				list. Then, enclose individual list items using the &lt;li&gt; tag. </li>
+		</ul>
+		</p>
+		<h2>Inline Elements</h2>
+		<p>
+			An inline element formats the inner content of block-level elements, such as adding links and emphasized
+			strings. Inline elements are most commonly used to format text without breaking the flow of the content.
+		</p>
+		<p>
+			For example, a &lt;strong&gt; tag would render an element in bold, whereas the &lt;em&gt; tag would show it in
+			italics. Hyperlinks are also inline elements that use an &lt;a&gt; tag and an href attribute to indicate the
+			link's destination:
+		</p>
+		<code class="line">
+			&lt;a href="<span class="blue">https://example.com/</span>"&gt;Click me!&lt;/a&gt;
+		</code>
+		<h2>HTML Evolution – What Differs Between HTML and HTML5?</h2>
+		<p>The first version of HTML consisted of 18 tags. Since then, each new version came with new tags and attributes
+			added to the markup. The most significant upgrade of the language so far was the introduction of HTML5 in 2014.
+		</p>
+		<p>The main difference between <a href="https://www.hostinger.com/tutorials/difference-between-html-and-html5"
+				target="_blank">HTML and HTML5</a> is that HTML5 supports new kinds of form controls. HTML5 also
+			introduced several semantic tags that clearly describe the content, such as
+			&lt;article&gt;, &lt;header&gt;, and &lt;footer&gt;. </p>
+		<h2>Pros and Cons of HTML</h2>
+		<p>
+			Just like any other computer language, HTML has its strengths and limitations. Here are the pros and cons of
+			HTML:
+		</p>
+		<p>
+			Pros:
+		<ul>
+			<li><strong>Beginner-friendly</strong>. HTML has a clean and consistent markup, as well as a shallow learning
+				curve.
+			</li>
+			<li><strong>Support</strong>. The language is widely used, with a lot of resources and a large community behind
+				it.
+			</li>
+			<li><strong>Accessible</strong>. It is open-source and completely free. HTML runs natively in all web browsers.
+			</li>
+			<li><strong>Flexible</strong>. HTML is easily integrable with backend languages such as <a
+					href="https://www.hostinger.com/tutorials/php" target="_blank">PHP</a> and <a
+					href="https://www.hostinger.com/tutorials/what-is-node-js" target="_blank">Node.js</a>.
+			</li>
+		</ul>
+		</p>
+		<p>
+			Cons:
+		<ul>
+			<li><strong>Static</strong>. The language is primarily used for static web pages. For dynamic functionality,
+				you may need to use
+				JavaScript or a back-end language such as PHP.</li>
+			<li><strong>Separate HTML page</strong>. Users have to create individual web pages for HTML, even if the
+				elements are the same.
+			</li>
+			<li><strong>Browser compatibility</strong>. Some browsers adopt new features slowly. Sometimes older browsers
+				don’t always
+				render newer tags.
+			</li>
+		</ul>
+		</p>
+		<h2>How Are HTML, CSS, and Javascript Related
+		</h2>
+		<p>TML is used to add text elements and create the structure of content. However, it is not enough to build a
+			professional and fully responsive website. So, HTML needs the help of <a
+				href="https://www.hostinger.com/tutorials/css-cheat-sheet" target="_blank">Cascading Style Sheets (CSS)</a>
+			and
+			<a href="https://www.hostinger.com/tutorials/what-is-javascript" target="_blank">JavaScript</a> to create the
+			vast majority of website content.
+		</p>
+		<h2>Understanding HTML and Improving Your HTML Knowledge</h2>
+		<p><a href="https://www.hostinger.com/tutorials/html" target="_blank">Learning about HTML</a> is a great first
+			step for those <a href="https://www.hostinger.com/tutorials/become-web-developer" target="_blank">interested in
+				web development.</a> </p>
+		<p>There are plenty of <a href="https://www.hostinger.com/tutorials/learn-coding-online-for-free/"
+				target="_blank">courses available online</a> to learn to code, but we have listed three of the best tutorial
+			databases for HTML:
+		<ul>
+			<li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> – has resources, examples, and exercises
+				to help learn basic HTML for free. There is also a
+				self-paced HTML tutorial that costs $95 and provides an official certificate. </li>
+			<li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> – offers introductory courses for free
+				with interactive tutorials. Codecademy uses a
+				split-screen that will automatically show the result of your coding on an HTML file. There is exclusive
+				content available for $19.99/month.</li>
+			<li><a href="https://www.coursera.org/" target="_blank">Coursera</a> – offers various courses that provide
+				in-depth explanations with real-life examples. The
+				subscription price is $49/month, and there is a 7-day free trial to start. </li>
+		</ul>
+		</p>
+
+		<h2>Conclusion </h2>
+		<p>HTML is the primary markup language found on the internet. Every HTML page has a series of elements that create
+			the content structure of a web page or application. </p>
+		<p>HTML is a beginner-friendly language with plenty of support and is mainly used for static website pages. HTML
+			works best together with CSS for the styling and JavaScript for the functionality.</p>
+		<p>We have also shown you some of the top courses available online that will either help to improve your knowledge
+			of HTML or provide a basic understanding of it.</p>
+	</article>
+</body>
+
+</html>
