@@ -1,0 +1,131 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ol {
+	width: 420px;
+	height: 210px;
+	margin: 0;
+	background-color: #ed9eae;
+	color: white;
+	padding: 15px;
+	list-style-type: none;
+	counter-reset: number;
+}
+
+ol li {
+	padding-left: 9px;
+	list-style-position: inside;
+	margin: 8px;
+	background-color: #c66376;
+}
+
+
+ol li::before {
+	content: counter(number) '.';
+	counter-increment: number;
+	counter-increment: number;
+}
+
+.mark,
+.mark1,
+.mark2,
+.mark3,
+.mark4 {
+	margin: 0;
+	padding: 6px;
+	text-align: center;
+	display: inline-block;
+	background-color: #9e354a;
+}
+
+.mark {
+	width: 60px;
+}
+
+.mark1 {
+	width: 80px;
+}
+
+.mark2 {
+	width: 100px;
+}
+
+.mark3 {
+	width: 50px;
+}
+
+.mark4 {
+	width: 70px;
+}
+
+ul {
+	margin: 8px;
+	padding: 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+ul li {
+	padding: 16px 16px 16px 32px;
+}
+
+ul li::before {
+	list-style-image: url("../Image/unchecked_16.png")
+}
+
+.unchecked,
+.unchecked1 {
+	list-style-image: url("../Image/unchecked_16.png")
+}
+
+.unchecked {
+	background-color: #a5ccda;
+}
+
+.unchecked1 {
+	background: #add8e6;
+}
+
+.checked {
+	background-color: #e2e2e2;
+	list-style-image: url("../Image/checked_16.png");
+}
+
+ul li::after {
+	content: url("../Image/X.png");
+	padding-left: 16px;
+}
+
+dl {
+	counter-reset: number;
+}
+
+dt {
+	font-style: italic;
+	margin: 30px 0px;
+}
+
+dd:before {
+	content: counter(number) '.';
+	counter-increment: number;
+	counter-increment: number;
+}
+
+
+.grey {
+	color: grey;
+	margin: 4px 0px;
+	padding: 0;
+}
+
+.blue {
+	margin: 4px 0px;
+	padding: 0;
+	color: blue;
+}
+
+p {
+	margin: 3px 0px;
+	padding-left: 24px;
+}
