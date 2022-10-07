@@ -2,18 +2,16 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-ol {
+ol.list1 {
 	width: 420px;
 	height: 210px;
 	margin: 0;
 	background-color: #ed9eae;
 	color: white;
 	padding: 15px;
-	list-style-type: none;
-	counter-reset: number;
 }
 
-ol li {
+ol.list1 li {
 	padding-left: 9px;
 	list-style-position: inside;
 	margin: 8px;
@@ -21,42 +19,13 @@ ol li {
 }
 
 
-ol li::before {
-	content: counter(number) '.';
-	counter-increment: number;
-	counter-increment: number;
-}
-
-.mark,
-.mark1,
-.mark2,
-.mark3,
-.mark4 {
+.mark {
 	margin: 0;
-	padding: 6px;
+	margin-left: -6px;
+	padding: 6px 10px;
 	text-align: center;
 	display: inline-block;
 	background-color: #9e354a;
-}
-
-.mark {
-	width: 60px;
-}
-
-.mark1 {
-	width: 80px;
-}
-
-.mark2 {
-	width: 100px;
-}
-
-.mark3 {
-	width: 50px;
-}
-
-.mark4 {
-	width: 70px;
 }
 
 ul {
@@ -79,12 +48,12 @@ ul li::before {
 	list-style-image: url("../Image/unchecked_16.png")
 }
 
-.unchecked {
+ul li:nth-child(even) {
 	background-color: #a5ccda;
 }
 
-.unchecked1 {
-	background: #add8e6;
+ul li:nth-child(odd) {
+	background-color: #add8e6;
 }
 
 .checked {
@@ -97,21 +66,16 @@ ul li::after {
 	padding-left: 16px;
 }
 
-dl {
-	counter-reset: number;
-}
 
 dt {
 	font-style: italic;
 	margin: 30px 0px;
 }
 
-dd:before {
-	content: counter(number) '.';
-	counter-increment: number;
-	counter-increment: number;
+dd {
+	padding: 0;
+	margin: 0;
 }
-
 
 .grey {
 	color: grey;
@@ -125,7 +89,16 @@ dd:before {
 	color: blue;
 }
 
+ol.list2 {
+	margin: 0;
+}
+
+ol.list2 li {
+	margin: 0;
+	padding: 0;
+}
+
 p {
-	margin: 3px 0px;
-	padding-left: 24px;
+	margin: 0;
+	padding: 0;
 }
