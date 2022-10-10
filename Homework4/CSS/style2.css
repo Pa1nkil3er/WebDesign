@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.menu {
+	position: fixed;
+	height: 100vw;
+	top: 0;
+	background-color: #8a8a8a;
+	color: white;
+	text-align: center;
+	padding: 24px;
+	font-size: 24px;
+}
+
+div.image img {
+	height: 50%;
+	width: 50%;
+	padding: 20px;
+}
+
+
+h2 {
+	font-size: 48px;
+	text-transform: capitalize;
+}
+
+p {
+	font-size: 36px;
+	text-transform: capitalize;
+}
+
+p,
+h2 {
+	padding-left: 220px;
+}
