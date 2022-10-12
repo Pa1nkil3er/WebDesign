@@ -20,7 +20,11 @@ td {
 tr:nth-child(1) th {
 	position: sticky;
 	top: 0;
+}
 
+tr td:nth-child(1) {
+	position: sticky;
+	top: 0;
 }
 
 th {
