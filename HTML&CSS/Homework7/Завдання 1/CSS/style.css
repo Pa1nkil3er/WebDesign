@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	height: 100vh;
+	box-sizing: border-box;
+	background: #0f2239;
+	padding: 12px;
+}
+
+span {
+	font-size: 1.3em;
+	color: white;
+	font-weight: bold;
+}
+
+.header {
+	background: #aa2f27;
+	display: flex;
+}
+
+.header span {
+	margin: 4px;
+	padding: 16px;
+}
+
+.header span:nth-child(3) {
+	margin-left: auto;
+}
+
+.grid {
+	box-sizing: border-box;
+	margin-top: 12px;
+	display: grid;
+	grid-template-areas:
+		"menu" "content" "content" "right"
+		"footer" "footer" "footer" "footer";
+	grid-template-columns: 13% 70% 13%;
+	grid-template-rows: 70vh;
+	gap: 8px;
+	text-align: center;
+
+}
+
+.grid span {
+	text-align: left;
+	border-radius: 6px;
+}
+
+.grid span:nth-child(1),
+.grid span:nth-child(2),
+.grid span:nth-child(3) {
+	text-align: left;
+	padding-top: 35vh;
+	padding-left: 2vw;
+}
+
+.grid span:nth-child(1) {
+	background: #b2a429;
+	grid-area: menu;
+	grid-column-start: 1;
+	grid-row: 1;
+}
+
+.grid span:nth-child(2) {
+	background: #1869a9;
+	grid-area: content;
+	grid-column-start: 2;
+	grid-row: 1;
+}
+
+.grid span:nth-child(3) {
+	background: #01796f;
+	grid-area: right;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row: 1;
+}
+
+.grid span:nth-child(4) {
+	background: #492881;
+	grid-area: footer;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	height: 140px;
+	padding-top: 65px;
+	padding-left: 12px;
+}

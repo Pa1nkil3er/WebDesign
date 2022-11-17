@@ -127,18 +127,15 @@ img {
 }
 
 div.gallery img.three {
-	width: 470px;
-	height: 540px;
+	width: 30.2%;
 }
 
 div.gallery img.two {
-	height: 700px;
-	width: 740px;
+	width: 47.5%;
 }
 
 div.gallery img.one {
-	width: 1600px;
-	height: 600px
+	width: 100%;
 }
 
 div.gallery2 {
@@ -148,8 +145,7 @@ div.gallery2 {
 }
 
 div.gallery2 img {
-	width: 250px;
-	height: 250px;
+	width: 16%
 }
 
 p.footer {
