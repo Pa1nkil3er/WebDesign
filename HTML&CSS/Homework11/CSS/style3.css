@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	padding: 2.6em;
+	margin: 2.6em auto;
+	background: #a0cece;
+	border-radius: 12px;
+	width: max-content;
+}
+
+h1 {
+	font-size: 1.9em;
+	margin-left: -16%;
+	width: 50%;
+	background: #db6422;
+	padding: 2% 48% 2% 8%;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+form {
+	color: #497373;
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+form input{
+	padding: 12px;
+	margin: 12px;
+	font-size: 1.2em;
+}
+span{
+	padding:14px;
+	font-size:1.1em;
+}
+input {
+	background: #a8d3d2;
+	border: none;
+	border-bottom: #335f61 solid 1px;
+}
+
+input[type=number] {
+	appearance: textfield;
+}
+
+label.card {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#card_number {
+	grid-row-start: 2;
+	grid-column: span 3;
+}
+
+.name {
+	grid-row-start: 3;
+	grid-column: span 3;
+}
+
+#name_surname {
+	grid-row-start: 4;
+	grid-column: span 3;
+}
+
+.date {
+	grid-row-start: 5;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.code {
+	grid-row-start: 5;
+	grid-column-start: 3;
+}
+
+#month {
+	grid-row: 6;
+}
+
+#year {
+	grid-row: 6;
+}
+
+input[type="password"] {
+	grid-row: 6;
+}
