@@ -14,10 +14,10 @@
 
 h1 {
 	font-size: 1.9em;
-	margin-left: -16%;
-	width: 50%;
+	margin-left: -14%;
+	width: 42%;
 	background: #db6422;
-	padding: 2% 48% 2% 8%;
+	padding: 2% 30% 2% 16%;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
@@ -30,15 +30,17 @@ form {
 	grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-form input{
+form input {
 	padding: 12px;
 	margin: 12px;
 	font-size: 1.2em;
 }
-span{
-	padding:14px;
-	font-size:1.1em;
+
+span {
+	padding: 14px;
+	font-size: 1.1em;
 }
+
 input {
 	background: #a8d3d2;
 	border: none;

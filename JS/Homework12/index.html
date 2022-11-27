@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="bg-emerald-900">
+		<table id="Table" class="mt-5 p-5 text-2xl text-center font-bold w-4/5 border-black border-2 mx-auto ">
+			<tr class="border-black border-2">
+				<td>Символ елемента</td>
+				<td>Назва елемента</td>
+				<td>Порядкове число</td>
+				<td>Маса елементу</td>
+			</tr>
+		</table>
+		<div class="flex m-2 p-2 w-max items-center justify-center mx-auto">
+			<input class="m-2 p-2 text-2xl" type="text" name="" placeholder="Символ елементу" id="symbol">
+			<input class="m-2 p-2 text-2xl" type=" text" name="" placeholder="Назва елементу" id="name">
+			<input class="m-2 p-2 text-2xl" type=" number" name="" placeholder="Порядкове число" id="number">
+			<input class="m-2 p-2 text-2xl" type=" number" name="" placeholder="Маса елементу" id="mass">
+			<button class="m-2 text-2xl bg-shadow-fuchsia-500 text-emerald-500 " id="addBtn">Add</button>
+			<button class="m-2 text-2xl bg-shadow-fuchsia-500 text-emerald-500" id="clearBtn">Clear</button>
+		</div>
+		<div class="flex m-2 p-2 w-max items-center justify-center mx-auto">
+			<input type="text" id="searchInput" class="m-2 text-2xl rounded-lg" onkeyup="Search()"
+				placeholder="Search for element...">
+		</div>
+		<script src="JS/script.js"></script>
+	</body>
