@@ -11,11 +11,15 @@ addBtn.onclick = () => {
 	inputNumber = Num.value;
 	inputMass = Mass.value;
 	if (Symbol.value != "" && Name.value != "" && Num.value != "" && Mass.value != "") {
-		table.innerHTML += `<tr id="new_tr"><td>${inputSymbol}</td><td>${inputName}</td><td>${inputNumber}</td><td>${inputMass}</td><td><button id="clearTr">Clear</button></td></tr> `;
+		table.innerHTML += `<tr><td>${inputSymbol}</td><td>${inputName}</td><td>${inputNumber}</td><td>${inputMass}</td><td><button id="clearTr" onclick="ClearTr(this)">Clear</button></td></tr> `;
 	}
 }
 clearBtn.onclick = () => {
 	table.innerHTML = "";
+}
+function ClearTr(r) {
+	let i = r.parentNode.parentNode.rowIndex;
+	table.deleteRow(i);
 }
 
 function Search() {
