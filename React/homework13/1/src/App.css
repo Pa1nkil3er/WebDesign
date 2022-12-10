@@ -1,0 +1,43 @@
+div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: url(https://wallpapercave.com/wp/wp11081888.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 50vw;
+  color: rgba(0, 0, 0, 0.841);
+
+}
+
+pre,
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 2.1em;
+}
+
+p {
+  padding: 12px;
+
+  font-size: 1.7em;
+}
+
+pre {
+  margin-bottom: 0;
+  padding-top: 15%;
+  font-size: 4.4em;
+  font-weight: bold;
+
+}

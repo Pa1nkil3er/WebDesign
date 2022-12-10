@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.App {
+	margin: 20px auto 20px auto;
+}
+
+table {
+	border: 1px solid black;
+	font-size: 1.3em;
+	border-collapse: collapse;
+	padding: 8px;
+}
+
+thead {
+	padding: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	padding: 8px;
+}
+
+tbody td {
+	border: 1px solid black;
+}
