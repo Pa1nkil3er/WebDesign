@@ -8,7 +8,7 @@ export default function Dislikes() {
 	return (
 		<div className="dislikes">
 			<span>Dislikes:{current}</span>
-			<button onClick={AddDislikes}>Add</button>
+			<button onClick={AddDislikes}>&#128078;</button>
 		</div>
 	)
 }

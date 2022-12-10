@@ -7,7 +7,7 @@ export default function Likes() {
 	return (
 		<div className="likes">
 			<span>Likes:{current}</span>
-			<button onClick={AddLikes}>Add</button>
+			<button onClick={AddLikes}>&#128077;</button>
 		</div>
 	)
 }
