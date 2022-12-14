@@ -4,9 +4,32 @@ import "./App.css";
 import data from "./mock-data.json";
 import ReadOnlyRow from "./components/ReadOnlyRow";
 import EditableRow from "./components/EditableRow";
+const Tasks = [
+  {
+    id: 1,
+    Name: "C#",
+    Deadline: "31.12.2022",
+    Priority: "middle",
+    Tags: "class,abstract class",
+    Description: "Do a lab4-5 with 10 classes and use abstract classes"
+  },
+  {
+    id: 2,
+    Name: "React",
+    Deadline: "12.12.2022",
+    Priority: "highest",
+    Tags: "Ref,usestate",
+    Description: "Do an exam task from Vlad"
+  }
 
+]
 const App = () => {
-  const [tasks, setTasks] = useState(data);
+  const Sort = () => {
+    [...Tasks].sort((a, b) =>
+      a.name > b.name ? 1 : -1,
+    )
+  };
+  const [tasks, setTasks] = useState(Tasks);
   const [addFormData, setAddFormData] = useState({
     Name: "",
     Deadline: "",
@@ -120,7 +143,7 @@ const App = () => {
         <table>
           <thead>
             <tr>
-              <th>Name</th>
+              <th onClick={Sort()}>Name</th>
               <th>Deadline</th>
               <th>Priority</th>
               <th>Tags</th>
