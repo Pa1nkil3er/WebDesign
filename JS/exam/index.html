@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<table id="table">
+		<thead>
+			<tr>
+				<th onclick="sortTable(0)">Name</th>
+				<th onclick="sortTable(1)">Deadline</th>
+				<th onclick="sortTable(2)">Priority</th>
+				<th onclick="sortTable(3)">Tags</th>
+				<th onclick="sortTable(4)">Description</th>
+				<th>Status</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+			<div>
+				<input type="text" name="" placeholder="Name:" id="name">
+				<input type="date" name="" id="date">
+				<input type="text" name="" placeholder="Priority:" id="priority">
+				<input type="text" name="" placeholder="Tags:" id="tags">
+				<input type="text" name="" placeholder="Description:" id="description">
+				<button id="addBtn">Add</button>
+				<button id="clearBtn">Clear</button>
+			</div>
+			<div>
+				<input type="text" id="searchInput" class="m-2 text-2xl rounded-lg" onkeyup="Search()"
+					placeholder="Search for element...">
+			</div>
+			<script src="JS/script.js"></script>
+		</tbody>
+	</table>
+</body>
+
+</html>

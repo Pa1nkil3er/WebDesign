@@ -1,17 +1,181 @@
-import './App.css';
+import CardsList from "./components/CardsList";
+import "./styles.css";
+
 const cards = [
   {
-    name: "A", suit: "&U+2665;"
+    value: "🂡"
+  },
+  {
+    value: "🂱"
+  },
+  {
+    value: "🃁"
+  },
+  {
+    value: "🃑"
+  },
+  {
+    value: "🂢"
+  },
+  {
+    value: "🂲"
+  },
+  {
+    value: "🃂"
+  },
+  {
+    value: "🃒"
+  },
+  {
+    value: "🂣"
+  },
+  {
+    value: "🂳"
+  },
+  {
+    value: "🃃"
+  },
+  {
+    value: "🃓"
+  },
+  {
+    value: "🂤"
+  },
+  {
+    value: "🂴"
+  },
+  {
+    value: "🃄"
+  },
+  {
+    value: "🃔"
+  },
+  {
+    value: "🂥"
+  },
+  {
+    value: "🂵"
+  },
+  {
+    value: "🃅"
+  },
+  {
+    value: "🃕"
+  },
+  {
+    value: "🂦"
+  },
+  {
+    value: "🂶"
+  },
+  {
+    value: "🃆"
+  },
+  {
+    value: "🃖"
+  },
+  {
+    value: "🂧"
+  },
+  {
+    value: "🂷"
+  },
+  {
+    value: "🃇"
+  },
+  {
+    value: "🃗"
+  },
+  {
+    value: "🂨"
+  },
+  {
+    value: "🂸"
+  },
+  {
+    value: "🃈"
+  },
+  {
+    value: "🃘"
+  },
+  {
+    value: "🂩"
+  },
+  {
+    value: "🂹"
+  },
+  {
+    value: "🃉"
+  },
+  {
+    value: "🃙"
+  },
+  {
+    value: "🂪"
+  },
+  {
+    value: "🂺"
+  },
+  {
+    value: "🃊"
+  },
+  {
+    value: "🃚"
+  },
+  {
+    value: "🂫"
+  },
+  {
+    value: "🂻"
+  },
+  {
+    value: "🃋"
+  },
+  {
+    value: "🃛"
+  },
+  {
+    value: "🂬"
+  },
+  {
+    value: "🂼"
+  },
+  {
+    value: "🃌"
+  },
+  {
+    value: "🃜"
+  },
+  {
+    value: "🂭"
+  },
+  {
+    value: "🂽"
+  },
+  {
+    value: "🃍"
+  },
+  {
+    value: "🃝"
+  },
+  {
+    value: "🂮"
+  },
+  {
+    value: "🂾"
+  },
+  {
+    value: "🃎"
+  },
+  {
+    value: "🃞"
   }
-]
-function App() {
+];
+
+export default function App() {
   return (
     <div className="App">
-      <ul>
-        <li>A </li>
-      </ul>
+      <CardsList cards={cards} />
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "Name": "C#",
+    "Deadline": "31.12.2022",
+    "Priority": "middle",
+    "Tags": "class,abstract class",
+    "Description": "Do a lab4-5 with 10 classes and use abstract classes"
+  },
+  {
+    "id": 2,
+    "Name": "React",
+    "Deadline": "12.12.2022",
+    "Priority": "highest",
+    "Tags": "Ref,usestate",
+    "Description": "Do an exam task from Vlad"
+  }
+]

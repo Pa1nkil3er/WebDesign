@@ -1,0 +1,82 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.addInput {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form * {
+  color: aliceblue;
+  font-size: 28px;
+}
+
+form:nth-child(2) {
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: crimson;
+}
+
+td:nth-child(even) {
+  background-color: lightcoral;
+}
+
+td:nth-child(odd) {
+  background-color: indianred;
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+table td button {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+
+}
+
+input,
+form button {
+  text-align: center;
+  padding: 8px;
+  background-color: palevioletred;
+}
+
+select {
+  background-color: firebrick;
+}
